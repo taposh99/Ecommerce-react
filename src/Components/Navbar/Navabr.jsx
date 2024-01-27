@@ -1,8 +1,10 @@
 
 import { React } from 'react';
+import NavbarData from '../../Data/NavbaData';
 
 
 const Navabr = () => {
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
   <div className="container-fluid">
@@ -11,27 +13,35 @@ const Navabr = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ms-auto text-center">
-        <li className="nav-item">
-          <a className="nav-link" aria-current="page" href="/">SAAE MORE ON APP</a>
+
+      {
+        NavbarData.map(data=>
+          <li className="nav-item" key={data.id}>
+          <a className="nav-link" aria-current="page" href="/">{data.item}</a>
+        </li>
+        )
+      }
+        {/* <li className="nav-item">
+          <a className="nav-link" aria-current="page" href="/">SAVE MORE ON APP</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">CUSTOMER CAE</a>
+          <a className="nav-link" href="/">CUSTOMER CARE</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/">SELL ON BARAZ</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">TACK MY ORDER</a>
+          <a className="nav-link" href="/">TRACK MY ORDER</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/">SIGNUP / LOGIN</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">BAAZ AFFILIATE PROGRAMM</a>
+          <a className="nav-link" href="/">BARAZ AFFILIATE PROGRAMM</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/">ভাষা</a>
-        </li>
+        </li> */}
       
        
       </ul>
