@@ -4,6 +4,7 @@ import NavbarData from '../../Data/NavbaData';
 
 
 const Navabr = () => {
+	
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
@@ -14,8 +15,7 @@ const Navabr = () => {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ms-auto text-center">
 
-      {
-        NavbarData.map(data=>
+      { NavbarData.map(data=>
           <li className="nav-item" key={data.id}>
           <a className="nav-link" aria-current="page" href="/">{data.item}</a>
         </li>
@@ -36,9 +36,7 @@ const Navabr = () => {
         <li className="nav-item">
           <a className="nav-link" href="/">SIGNUP / LOGIN</a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">BARAZ AFFILIATE PROGRAMM</a>
-        </li>
+
         <li className="nav-item">
           <a className="nav-link" href="/">ভাষা</a>
         </li> */}
